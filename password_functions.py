@@ -7,8 +7,7 @@ def verify_password(user_in_pass, correct_pass_hash):
 
     if user_in_hash == correct_pass_hash:
         return True
-    else:
-        return False
+    return False
 
 
 def create_new_password(user_in):
