@@ -34,6 +34,8 @@ exit       -   leave the command-line application""")
         else:
             pass
     elif command == 'exit':
+        print('Bye-bye!')
+        sleep(1)
         return_to_menu = False
     else:
         print(f"'{command}' is not recognised, please try again.")
@@ -43,8 +45,6 @@ exit       -   leave the command-line application""")
     if return_to_menu:
         sleep(1)
         main_menu()
-    print('Bye-bye!')
-    sleep(1)
 
 
 if __name__ == "__main__":
