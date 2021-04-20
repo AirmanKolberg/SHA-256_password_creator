@@ -1,11 +1,11 @@
 import hashlib
 
 
-def verify_password(user_in, correct_password):
-    user_in_converted = bytes(user_in, 'utf-8')
-    user_password = hashlib.sha256(user_in_converted).hexdigest()
+def verify_password(user_pass, correct_password):
+    user_pass_converted = bytes(user_pass, 'utf-8')
+    password_guess = hashlib.sha256(user_pass_converted).hexdigest()
 
-    if user_password == correct_password:
+    if password_guess == correct_password:
         return True
     else:
         return False
